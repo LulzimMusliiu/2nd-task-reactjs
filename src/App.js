@@ -1,6 +1,6 @@
 import './App.scss';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 
 const acording = [
   {
@@ -232,7 +232,7 @@ function App() {
   }
   const [show, setShow] = useState();
   function showopen(props) {
-    show == props ? setShow() : setShow(props)
+    show === props ? setShow() : setShow(props)
   }
 
   return (
@@ -322,7 +322,7 @@ function App() {
                 <div className='open-icon'>
                   <svg width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M7.4 15.4L6 14l6-6l6 6l-1.4 1.4l-4.6-4.6Z" /></svg>
                 </div>
-                {show == index && <div className='holding-information'>
+                {show === index && <div className='holding-information'>
                   <h1>{item.des}</h1>
                 </div>}
               </div>
