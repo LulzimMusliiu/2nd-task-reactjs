@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.scss';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import React, { Component, useState } from 'react';
