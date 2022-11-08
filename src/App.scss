@@ -59,6 +59,7 @@ label {
 }
 .tabs {
   display:flex;
+  flex-wrao:wrap;
 }
 .react-tabs__tab {
   padding: 15px 25px !important;
